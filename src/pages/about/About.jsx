@@ -7,28 +7,7 @@ const About = () => {
         <h1>About me</h1>
       </header>
       <main>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-        laudantium ut beatae, suscipit voluptatum laborum, magnam commodi, odit
-        sapiente laboriosam assumenda autem repellendus? Consequuntur veniam
-        error ex ullam aut harum molestias consectetur hic iure cupiditate ad
-        dolorum deleniti aliquam, dolorem quasi odio et nisi! Sapiente ut est
-        eos! Dolores illo ipsum iste rem quaerat accusamus placeat provident
-        recusandae ut? Accusamus atque quae facere architecto, nam et officia ea
-        excepturi dolorum molestias, in neque reiciendis nisi, itaque commodi
-        quam earum minima ipsam tempore eaque hic labore error eius at. Modi
-        dolorem excepturi, molestiae cupiditate beatae laudantium est, nobis
-        expedita laboriosam repellendus eaque reiciendis voluptatem! Accusantium
-        quod ratione officia eligendi! Vitae deserunt ex aut? Dolorum sunt
-        similique molestias labore, veniam magni incidunt voluptate aliquam
-        fugit. Dignissimos, voluptate? Neque unde libero numquam quasi
-        doloremque blanditiis, voluptas beatae harum voluptatibus iure atque
-        aliquam cum molestias sapiente repellendus sunt est ipsam quidem, ab, a
-        alias culpa qui veritatis. Corrupti, exercitationem? Adipisci maxime
-        accusamus qui dolore consequatur repellendus sunt officia, fuga illo aut
-        ratione voluptas nostrum, alias aperiam fugit nihil assumenda minima
-        quod deleniti neque nemo excepturi ullam, quo dignissimos. Repellat quam
-        beatae odit maiores quidem facilis, voluptas minus quo optio quod porro
-        atque consequuntur a.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti asperiores similique voluptates quidem impedit, officiis non iure, possimus nesciunt, ex minus inventore ipsum cupiditate molestias sit repudiandae odio vero? Voluptate aut animi distinctio repellendus sunt ipsam voluptas rem tenetur aliquid consequatur perspiciatis dolores ab dicta officiis sapiente repellat amet cupiditate, neque quos doloremque? Enim optio a qui ea. Fugiat laborum dolor earum ipsa rerum, a nihil, corporis expedita nam ea est id dolorem ratione alias. Quas, quos repellendus vero aperiam porro eligendi excepturi repellat ad nihil iure tenetur distinctio tempore doloremque placeat nostrum, praesentium maiores itaque, ullam odio eum aliquam officiis qui accusantium hic? Quam, fugiat esse! Soluta explicabo mollitia, laborum id repudiandae quod autem sunt sequi ipsam similique ratione est quam impedit praesentium sed perferendis nesciunt recusandae vero officiis voluptas nihil dicta natus illum eos? Aspernatur odio architecto quod illum voluptatem vel minus error itaque, atque recusandae repellendus doloremque optio placeat nulla corporis ducimus? At eligendi dolores odit temporibus quaerat, minima corporis! Cum, rem. Omnis maxime aliquid cumque! Reprehenderit neque natus, impedit esse dignissimos, quod asperiores quas dolore deserunt id rem nostrum delectus ex excepturi obcaecati tempore eius. Nesciunt libero ratione a explicab
       </main>
     </div>
   );
