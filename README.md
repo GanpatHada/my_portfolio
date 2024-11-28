@@ -1,7 +1,13 @@
 # Ganpat Hada's Portfolio website
-____
 
 Welcome, 👏Here is my portfolio
+
+## 🖼 Portfolio preview (Desktop/Laptop)
+
+![Portfolio preview](./src/assets/app_screenshot_desktop.png)
+
+---
+
 ## 🚀 Features
 
 - **Responsive Design**: Works seamlessly on desktops, tablets, and mobile devices.
