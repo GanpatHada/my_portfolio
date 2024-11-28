@@ -1,0 +1,24 @@
+main{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#content{
+  font-size: 5rem;
+  flex: 1;
+  /* background:linear-gradient(135deg,rgba(0, 0, 0, 0.685),black,black,rgba(0, 0, 0, 0.685)),url('./assets/bg.jpg'); */
+  background: radial-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.829)),url('./assets/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  overflow: hidden;
+}
+
+#content >*{
+  margin: auto;
+  max-width: 1500px;
+  overflow: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;  
+}
