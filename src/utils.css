@@ -41,3 +41,14 @@ a{
 .app-pages main::-webkit-scrollbar-thumb{
     background-color: rgb(99, 99, 99);
 }
+.app-links{
+    color: aqua;
+    cursor: pointer;
+    
+
+}
+.app-links:hover{
+    text-decoration: underline;
+    color: rgb(0, 184, 184);
+    
+}

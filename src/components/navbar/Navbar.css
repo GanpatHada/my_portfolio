@@ -1,77 +1,91 @@
-#main-nav{
-    background-color: black;
-    color: white;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
+#main-nav {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+}
+#main-nav > #nav-items {
+  flex: 1;
+}
+#main-logo {
+  height: 64px;
+  width: 8rem;
+}
+#main-nav > section:last-child {
+  width: 8rem;
+  display: flex;
+  justify-content: end;
+}
+#nav-items {
+  height: 100%;
+  gap: 1rem;
+}
+.nav-item {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgb(192, 192, 192);
+  font-weight: 500;
+  padding: 0rem 0.5rem;
+  transition: 0.2s ease-in-out;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 0.1rem;
+  width: 0%;
+  background-color: #48cae4;
+  transition: width 0.2s ease-in-out;
+}
+.nav-item:hover::after {
+  width: 100%;
+}
+.nav-item:hover {
+  color: rgb(255, 255, 255);
 }
 
-#main-nav > #nav-items{
-    flex: 1;
-}
-#main-logo{
-    height: 3rem;
-    width: 8rem;
-}
-#main-nav > section:last-child{
-    width: 8rem;
-    display: flex;
-    justify-content: end;
-}
-#nav-items{
-    height: 100%;
-    gap: 1rem;
-}
-.nav-item{
-    display: inline-block;
-    height: 100%;
-    position: relative;
-    font-size: 1rem;
-    cursor: pointer;
-    color: rgb(192, 192, 192);
-    font-weight: 500;
-    padding: 0rem 0.5rem;
-    transition: 0.2s ease-in-out;
-}
-.nav-item::after{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 0.1rem;
-    width: 0%;
-    background-color: #48CAE4;
-    transition: width 0.2s ease-in-out;
-}
-.nav-item:hover::after{
-    width: 100%;
-    
-}
-.nav-item:hover{
-    color:rgb(255, 255, 255);
-}
-
-#resume-button span{
-    position: relative;
-    top: 0.2rem;
-    font-size: 1.2rem;
-    left: 0.2rem;
+#resume-button span {
+  position: relative;
+  top: 0.2rem;
+  font-size: 1.2rem;
+  left: 0.2rem;
 }
 
 #resume-button {
-    
-    background:linear-gradient(135deg,rgba(0, 255, 255, 0.842),#81ffd9c2);
-    color: rgb(255, 255, 255);
-    padding: 0.6rem 1rem;
-    border-radius: 2rem;
-    font-size: 1rem;
-    transition: 0.2s ease-in-out;
-    font-weight: 300;
-    width: 7rem;
-    
+  background: linear-gradient(135deg, rgb(0, 163, 163), #008f53e1);
+  color: rgb(255, 255, 255);
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: 0.2s ease-in-out;
+  font-weight: 300;
+  width: 7rem;
 }
-
- #resume-button:hover {
-   
-   
- }
-
+#talk-button{
+    padding: 0.6rem 1rem;
+    background-color: rgba(128, 128, 128, 0.432);
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 300;
+}
+#open-sidenav-button {
+  display: none;
+  font-size: 1.8rem;
+  position: relative;
+  top: 0.3rem;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  #nav-items {
+    display: none;
+  }
+  #open-sidenav-button {
+    display: block;
+  }
+}

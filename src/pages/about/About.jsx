@@ -7,7 +7,23 @@ const About = () => {
         <h1>About me</h1>
       </header>
       <main>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti asperiores similique voluptates quidem impedit, officiis non iure, possimus nesciunt, ex minus inventore ipsum cupiditate molestias sit repudiandae odio vero? Voluptate aut animi distinctio repellendus sunt ipsam voluptas rem tenetur aliquid consequatur perspiciatis dolores ab dicta officiis sapiente repellat amet cupiditate, neque quos doloremque? Enim optio a qui ea. Fugiat laborum dolor earum ipsa rerum, a nihil, corporis expedita nam ea est id dolorem ratione alias. Quas, quos repellendus vero aperiam porro eligendi excepturi repellat ad nihil iure tenetur distinctio tempore doloremque placeat nostrum, praesentium maiores itaque, ullam odio eum aliquam officiis qui accusantium hic? Quam, fugiat esse! Soluta explicabo mollitia, laborum id repudiandae quod autem sunt sequi ipsam similique ratione est quam impedit praesentium sed perferendis nesciunt recusandae vero officiis voluptas nihil dicta natus illum eos? Aspernatur odio architecto quod illum voluptatem vel minus error itaque, atque recusandae repellendus doloremque optio placeat nulla corporis ducimus? At eligendi dolores odit temporibus quaerat, minima corporis! Cum, rem. Omnis maxime aliquid cumque! Reprehenderit neque natus, impedit esse dignissimos, quod asperiores quas dolore deserunt id rem nostrum delectus ex excepturi obcaecati tempore eius. Nesciunt libero ratione a explicab
+        I'm a dedicated software developer with a strong foundation in
+        full-stack web development <br />
+        <br />
+        I strongly believe in the power of project-based learning as a means to
+        gain practical knowledge and real-world experience. By building projects
+        that solve real problems, I continuously refine my technical and
+        problem-solving skills. This approach has not only enhanced my ability
+        to understand complex concepts but also prepared me to contribute
+        effectively to team-based environments and deliver impactful solutions
+        in professional settings. <br /><br />My expertise lies in building
+        responsive and interactive front-end applications using React, and
+        developing efficient and scalable back-end systems with Express and
+        Java. With a passion for crafting seamless user experiences and robust
+        server-side solutions, I thrive on solving complex challenges and
+        contributing to impactful projects. I'm always eager to learn and grow,
+        leveraging my skills to drive innovation and deliver high quality
+        software solutions.
       </main>
     </div>
   );

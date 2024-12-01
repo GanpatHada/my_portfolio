@@ -6,8 +6,7 @@ main{
 #content{
   font-size: 5rem;
   flex: 1;
-  /* background:linear-gradient(135deg,rgba(0, 0, 0, 0.685),black,black,rgba(0, 0, 0, 0.685)),url('./assets/bg.jpg'); */
-  background: radial-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.829)),url('./assets/bg.jpg');
+  background:radial-gradient(rgb(28, 59, 58),rgb(0, 0, 0));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; 
