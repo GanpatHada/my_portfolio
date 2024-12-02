@@ -19,17 +19,17 @@ const Navbar = () => {
         <Link to={"/about"} className="nav-item all-centered">
           About
         </Link>
-        <Link className="nav-item all-centered">Skills</Link>
+        <Link to={"/skills"} className="nav-item all-centered">Skills</Link>
         <Link to={"/projects"} className="nav-item all-centered">
           Projects
         </Link>
         <Link className="nav-item all-centered">Blogs</Link>
-        <Link className="nav-item all-centered">Contact</Link>
+        <Link to={"/contact"} className="nav-item all-centered">Contact</Link>
         <a href='resume.pdf' download='Ganpat_resume.pdf' title="download resume" className="all-centered" id="resume-button">Resume<span><FiDownload /></span></a>  
       </section>
       <span id="open-sidenav-button" onClick={()=>setSideNav(true)}><RxHamburgerMenu /></span>
       <section id="talk-section" >
-            <button id="talk-button">Let's talk👏</button>
+            <Link to={"/contact"} id="talk-button">Let's talk👏</Link>
       </section>
     </nav>
   );

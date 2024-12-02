@@ -6,9 +6,11 @@ import { Outlet, RouterProvider } from "react-router-dom";
 import MobileNav from "./components/mobile_nav/MobileNav";
 import { useContext, useState } from "react";
 import { SideNavContext } from "./context/SideNavContext";
+import Alert from "./components/alert/Alert";
 const App = () => {
   return (
     <main>
+      <Alert/>
       <Navbar />
       <MobileNav />
       <div id="content">

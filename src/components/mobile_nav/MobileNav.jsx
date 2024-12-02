@@ -26,10 +26,10 @@ const MobileNav = () => {
       <section>
         
           <NavLink to="/about">About</NavLink>
-          <NavLink to="/">Skills</NavLink>
+          <NavLink to="/skills">Skills</NavLink>
           <NavLink to="/projects">Projects</NavLink>
           <NavLink to="/">Blogs</NavLink>
-          <NavLink to="/">Contact</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         
         
       </section>

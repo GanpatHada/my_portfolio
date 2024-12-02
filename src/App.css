@@ -4,7 +4,7 @@ main{
   height: 100%;
 }
 #content{
-  font-size: 5rem;
+  
   flex: 1;
   background:radial-gradient(rgb(28, 59, 58),rgb(0, 0, 0));
   background-position: center;
