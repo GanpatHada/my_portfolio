@@ -11,6 +11,9 @@
     transition: 0.2s transform ease-in-out;
     display: none;    
 }
+#mobile-nav .active{
+    color: aquamarine!important;
+}
 #mobile-logo{
     height: 5rem;
     margin: 1rem;

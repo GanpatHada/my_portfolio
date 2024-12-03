@@ -8,6 +8,9 @@
 #main-nav > #nav-items {
   flex: 1;
 }
+#main-nav .active{
+  color: aquamarine!important;
+}
 #main-logo {
   height: 56px;
   width: 8rem;
@@ -28,23 +31,11 @@
   font-size: 1rem;
   cursor: pointer;
   color: rgb(192, 192, 192);
-  font-weight: 500;
+  font-weight: 400;
   padding: 0rem 0.5rem;
   transition: 0.2s ease-in-out;
 }
-.nav-item::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 0.1rem;
-  width: 0%;
-  background-color: #48cae4;
-  transition: width 0.2s ease-in-out;
-}
-.nav-item:hover::after {
-  width: 100%;
-}
+
 .nav-item:hover {
   color: rgb(255, 255, 255);
 }
