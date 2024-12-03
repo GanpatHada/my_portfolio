@@ -6,7 +6,7 @@ import javaImage from "../../assets/java.png";
 import jsImage from "../../assets/js.png";
 import htmlImage from "../../assets/html.png";
 import cssImage from "../../assets/css.png";
-import reactImage from "../../assets/React.svg";
+import reactImage from "../../assets/react.svg";
 import nodeImage from "../../assets/node.png";
 import bootstrapImage from "../../assets/Bootstrap.svg";
 import mongodbImage from "../../assets/mongodb.svg";
