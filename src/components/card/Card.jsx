@@ -7,10 +7,6 @@ const Card = ({title,description,imageUrl,sourceCode,liveLink}) => {
     <div className={'landscape-card card'}>
         <section className="image-section">
             <img src={imageUrl} alt="..." />
-        </section>
-        <section className="card-info-section">
-            <h1>{title}</h1>
-            <p>{description}</p>
             <section className="card-actions">
                 <a className='all-centered' title='source code' target='_blank' href={sourceCode}>
                 <FiGithub />
@@ -19,6 +15,12 @@ const Card = ({title,description,imageUrl,sourceCode,liveLink}) => {
                 <HiOutlineExternalLink />
                 </a>
             </section>
+        </section>
+        
+        <section className="card-info-section">
+            <h1>{title}</h1>
+            <p>{description}</p>
+           
             
         </section>
     </div>

@@ -35,7 +35,8 @@
 }
 .skill-box .info-section h5{
     color: rgb(219, 219, 219);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 .skill-box .info-section p{
     color: gray;

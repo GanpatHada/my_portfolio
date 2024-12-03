@@ -1,57 +1,89 @@
 .landscape-card{
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(39, 39, 39);
     border-radius: 0.3rem;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    
-    
+    overflow: hidden;    
+    border: 1px solid rgba(128, 128, 128, 0.274);
 }
 .landscape-card .image-section{
     width: 100%;
     aspect-ratio: 2/1;
     overflow: hidden;
+    position: relative;
+    height: 100%;
+    
     
 }
+
 .landscape-card .image-section img{
     object-fit:cover;
     width: 100%;
     height: 100%;
+    
+    
+    
 }
 .card .card-info-section{
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 0.5rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
     
 }
 .card h1{
-    color: rgb(221, 221, 221);
+    color: rgb(201, 201, 201);
     padding: 0.5rem 0rem;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 1.2rem;
     
 }
 .card p{
     color: rgb(131, 131, 131);
     font-size: 0.9rem;
+    
 }
 .card-actions{
     display: flex;
     margin: 1rem 0rem;
+    position: absolute;
+    background-color: rgb(39, 39, 39);
+    bottom: -1rem;
+    left: 0px;
+    border-top-right-radius: 1.3rem;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    
 }
 .card-actions a{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     background-color: rgb(66, 66, 66);
-    height: 2.4rem;
-    width: 2.4rem;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
     padding: 0.4rem;
     color: rgb(146, 146, 146);
     transition: 0.2s;
-    margin-right: 0.6rem;
+    
 }
 .card-actions a:hover{
     color: rgb(224, 224, 224);
     background-color: rgb(94, 94, 94);
+}
+
+@media screen and (max-width:540px){
+    .card h1{
+        font-size: 1rem;
+    }
+    .card p{
+        font-size: 0.8rem;
+    }
+    .card-actions{
+        margin: 0.8rem 0rem;
+    }
+    .card .card-info-section{
+        padding: 0.5rem;
+    }
 }

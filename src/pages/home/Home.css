@@ -1,4 +1,6 @@
-
+#home-page{
+  background:radial-gradient(rgb(33, 59, 58),rgb(0, 0, 0));
+}
 #home-content {
   width: 50%;
   text-align: center;
