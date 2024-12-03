@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import emailjs from '@emailjs/browser';
 import { toast } from "react-toastify";
+import { sendMessage } from "../../services/ContactService";
+import { checkEmptyFields,checkValidEmail} from "../../utils/ContactUtils";
 
 const ContactForm = () => {
   const[message,setMessage]=useState({
-    clientName:'Mohit',
-    clientEmail:'mohit@gmail.com',
-    clientNumber:'5454124578',
-    clientMessageText:'Hi,Ganpat',
+    clientName:'',
+    clientEmail:'',
+    clientNumber:'',
+    clientMessageText:'',
   })
 
   const {clientEmail,clientName,clientMessageText,clientNumber}=message;
@@ -17,15 +18,18 @@ const ContactForm = () => {
       return(setMessage({...message,[name]:value}))
   }
 
-  const handleSendMessage=()=>{
-        toast.warning("field is empty");
-        return ;
-        console.log('clicked')
-        emailjs.send('service_yxn0g3t','template_1m040mn',{
-          clientName,clientEmail,clientNumber,clientMessageText
-        },{
-          publicKey: 'AiK4kUvNXDFMXPi0k',
-        }).then(()=>console.log('success')),(error)=>{console.log(error)};
+  const handleSendMessage=async()=>{
+        let areFieldsEmpty=checkEmptyFields(message);
+        if(areFieldsEmpty)
+          return toast.warning('required* fields are mandatory');
+        let emailVerified=checkValidEmail(message.clientEmail)
+        if(!emailVerified)
+          return toast.warning('Invalid email');
+        let messageSent=await sendMessage(message);
+        if(messageSent)
+          return toast.success('Message sent successfuly')
+        return toast.error('Something went wrong!')
+        
   }
   return (
     <section id="form-section">
