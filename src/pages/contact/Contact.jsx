@@ -2,15 +2,11 @@ import React, { useState } from "react";
 import "./Contact.css";
 import { toast } from "react-toastify";
 import { sendMessage } from "../../services/ContactService";
-import { checkEmptyFields,checkValidEmail} from "../../utils/ContactUtils";
+import { checkEmptyFields,checkValidEmail, initialMessage} from "../../utils/ContactUtils";
 
 const ContactForm = () => {
-  const[message,setMessage]=useState({
-    clientName:'',
-    clientEmail:'',
-    clientNumber:'',
-    clientMessageText:'',
-  })
+  const[message,setMessage]=useState({...initialMessage})
+  const[loadingText,setLoadingText]=useState('Send Message');
 
   const {clientEmail,clientName,clientMessageText,clientNumber}=message;
 
@@ -25,10 +21,20 @@ const ContactForm = () => {
         let emailVerified=checkValidEmail(message.clientEmail)
         if(!emailVerified)
           return toast.warning('Invalid email');
-        let messageSent=await sendMessage(message);
-        if(messageSent)
-          return toast.success('Message sent successfuly')
-        return toast.error('Something went wrong!')
+        try {
+          setLoadingText("Sending Message ...")
+          await sendMessage(message);
+          toast.success('Message sent successfuly')
+          setMessage({...initialMessage})
+        } catch (error) {
+          toast.error('Something went wrong!');
+          
+        }
+        finally{
+          setLoadingText('Send Message');
+        }
+       
+        
         
   }
   return (
@@ -77,7 +83,7 @@ const ContactForm = () => {
         value={clientMessageText}
         placeholder="Type your message (maximum 300 words)*"
       ></textarea>
-      <button id="send-message-button" onClick={handleSendMessage}>Send Message</button>
+      <button id="send-message-button" onClick={handleSendMessage}>{loadingText}</button>
     </section>
   );
 };

@@ -1,5 +1,15 @@
 import validator from "validator";
 
+const initialMessage=
+    {
+        clientName:'',
+        clientEmail:'',
+        clientNumber:'',
+        clientMessageText:'',
+      }
+
+
+
 function checkEmptyFields(message) {
   const { clientName, clientEmail, clientMessageText } = message;
   if (
@@ -15,4 +25,4 @@ function checkValidEmail(clientEmail) {
   return false;
 }
 
-export { checkEmptyFields, checkValidEmail };
+export { checkEmptyFields, checkValidEmail,initialMessage };

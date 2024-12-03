@@ -13,10 +13,8 @@ export async function sendMessage(message){
 
     try {
         await emailjs.send(serviceKey,templateKey,finalMessage,{publicKey:publicKey});
-        return true;
     } catch (error) {
-        console.log(error);
-        return false;
+       throw error;
     }
         
     
