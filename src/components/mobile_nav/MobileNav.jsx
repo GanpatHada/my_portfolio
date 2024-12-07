@@ -9,7 +9,7 @@ import { FiDownload, FiTwitter } from "react-icons/fi";
 const MobileNav = () => {
   const { sideNav, setSideNav } = useContext(SideNavContext);
 
-  const handleNavsClick=()=>setSideNav(false);
+  const handleNavsClick = () => setSideNav(false);
 
   return (
     <nav
@@ -27,17 +27,36 @@ const MobileNav = () => {
         </span>
       </section>
       <section>
-          <NavLink onClick={handleNavsClick} to="/">Home</NavLink>
-          <NavLink onClick={handleNavsClick} to="/about">About</NavLink>
-          <NavLink onClick={handleNavsClick} to="/skills">Skills</NavLink>
-          <NavLink onClick={handleNavsClick} to="/projects">Projects</NavLink>
-          <NavLink onClick={handleNavsClick} to="/blogs">Blogs</NavLink>
-          <NavLink onClick={handleNavsClick} to="/contact">Contact</NavLink>
-        
-        
+        <NavLink onClick={handleNavsClick} to="/">
+          Home
+        </NavLink>
+        <NavLink onClick={handleNavsClick} to="/about">
+          About
+        </NavLink>
+        <NavLink onClick={handleNavsClick} to="/skills">
+          Skills
+        </NavLink>
+        <NavLink onClick={handleNavsClick} to="/projects">
+          Projects
+        </NavLink>
+        <NavLink onClick={handleNavsClick} to="/blogs">
+          Blogs
+        </NavLink>
+        <NavLink onClick={handleNavsClick} to="/contact">
+          Contact
+        </NavLink>
       </section>
       <div>
-          <a id="resume-button-mobile" download='Ganpat_resume.pdf' href="resume.pdf">Resume <span><FiDownload /></span></a>
+        <a
+          id="resume-button-mobile"
+          download="Ganpat_resume.pdf"
+          href="resume.pdf"
+        >
+          Resume{" "}
+          <span>
+            <FiDownload />
+          </span>
+        </a>
       </div>
       <section id="social-links-mobile">
         <a href="">
