@@ -1,5 +1,5 @@
 .landscape-card{
-    background-color: rgb(39, 39, 39);
+    background-color: var(--card-bg-color);
     border-radius: 0.3rem;
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@
     display: flex;
     margin: 1rem 0rem;
     position: absolute;
-    background-color: rgb(39, 39, 39);
+    background-color: var(--card-bg-color);
     bottom: -1rem;
     left: 0px;
     border-top-right-radius: 1.3rem;

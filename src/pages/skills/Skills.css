@@ -6,13 +6,13 @@
     
 }
 .skill-box{
-    border: 1px solid rgba(128, 128, 128, 0.349);
+    border: 1px solid var(--card-border-color);
     aspect-ratio: 16 / 4;
     overflow: hidden;    
     display: flex;
     padding: 1rem;
     border-radius: 0.5rem;
-    background-color: rgba(39, 39, 39, 0.507);
+    background-color: var(--card-bg-color);
 }
 .skill-box .image-section{
     height: 100%;
@@ -34,12 +34,12 @@
     justify-content: center;
 }
 .skill-box .info-section h5{
-    color: rgb(219, 219, 219);
+    color: var(--primary-text);
     font-size: 1.1rem;
     font-weight: 500;
 }
 .skill-box .info-section p{
-    color: gray;
+    color: var(--secondary-text);
     font-size: 0.9rem;
 }
 @media screen and (max-width:1200px) and (min-width:769px){

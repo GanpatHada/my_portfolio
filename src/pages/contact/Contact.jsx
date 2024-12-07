@@ -6,7 +6,7 @@ import { checkEmptyFields,checkValidEmail, initialMessage} from "../../utils/Con
 
 const ContactForm = () => {
   const[message,setMessage]=useState({...initialMessage})
-  const[loadingText,setLoadingText]=useState('Send Message');
+  const[loading,setLoading]=useState(false);
 
   const {clientEmail,clientName,clientMessageText,clientNumber}=message;
 
@@ -22,7 +22,7 @@ const ContactForm = () => {
         if(!emailVerified)
           return toast.warning('Invalid email');
         try {
-          setLoadingText("Sending Message ...")
+          setLoading(true);
           await sendMessage(message);
           toast.success('Message sent successfuly')
           setMessage({...initialMessage})
@@ -31,7 +31,7 @@ const ContactForm = () => {
           
         }
         finally{
-          setLoadingText('Send Message');
+          setLoading(false);
         }
        
         
@@ -83,7 +83,7 @@ const ContactForm = () => {
         value={clientMessageText}
         placeholder="Type your message (maximum 300 words)*"
       ></textarea>
-      <button id="send-message-button" onClick={handleSendMessage}>{loadingText}</button>
+      <button disabled={loading} id="send-message-button" onClick={handleSendMessage}>{loading?"Sending Message ...":"Send Message"}</button>
     </section>
   );
 };
@@ -100,7 +100,7 @@ const Contact = () => {
             <div id="contact-recommend">
               If you want to write to me, the best way is to approach me via
               somebody I know. The second best way is to message me through{" "}
-              <span className="app-links">LinkedIn</span>.
+              <a href="https://www.linkedin.com/in/ganpathada/" target="_blank" className="app-links">LinkedIn</a>.
             </div>
             <h4>
               I'd love to hear about what you're working on and how I could

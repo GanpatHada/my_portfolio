@@ -12,6 +12,10 @@ button{
     border: none;
     cursor: pointer;
 }
+button:disabled{
+    cursor: not-allowed;
+    background-color: gray!important;
+}
 a{
     text-decoration: none;
     
@@ -26,7 +30,7 @@ a{
 .app-pages header h1{
     font-weight: 500;
 }.app-pages header h1::first-letter{
-    color: aqua;
+    color: aquamarine;
 }
 .app-pages main{
     flex: 1;
@@ -42,7 +46,7 @@ a{
     background-color: rgb(99, 99, 99);
 }
 .app-links{
-    color: aqua;
+    color: aquamarine;
     cursor: pointer;
     
 

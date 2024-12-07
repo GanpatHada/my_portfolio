@@ -6,6 +6,36 @@
     gap: 1rem;
     padding: 1rem;    
 }
+#project-page header{
+    display: flex;
+    justify-content: space-between;
+}
+#project-filter{
+    border: 1px solid var(--card-border-color);
+    background-color: var(--card-bg-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 7rem;
+    padding: 0.5rem 1rem ;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+#project-filter #project-filter-text{
+    color: rgb(214, 214, 214);
+}
+#project-filter #project-filter-image{
+    font-size: 1.2rem;
+    position: relative;
+    top: 0.1rem;
+    color: rgb(197, 197, 197);
+}
+#project-filter:hover{
+    border-color: rgba(128, 128, 128, 0.699);
+}
 @media screen and (max-width:1080px) and (min-width:541px){
     #project-page .app-page-content{
         grid-template-columns: repeat(3,1fr); 

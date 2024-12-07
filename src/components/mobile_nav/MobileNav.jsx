@@ -28,7 +28,7 @@ const MobileNav = () => {
           <NavLink to="/about">About</NavLink>
           <NavLink to="/skills">Skills</NavLink>
           <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/">Blogs</NavLink>
+          <NavLink to="/blogs">Blogs</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         
         

@@ -2,31 +2,34 @@
   background-color: rgb(0, 0, 0);
   color: white;
   justify-content: space-between;
-  padding: 0.5rem;
   border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+  
 }
-#main-nav > #nav-items {
+#main-nav-content{
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  margin: auto;
+  padding: 0.8rem;
+  align-items: center;
+}
+#main-nav-content > section{
+  
+}
+#main-nav  #nav-items {
   flex: 1;
+  gap: 1rem;
 }
 #main-nav .active{
   color: aquamarine!important;
 }
 #main-logo {
-  height: 3.5rem;
   width: 8rem;
+  height: 3rem;
 }
-#main-nav > section:last-child {
-  width: 8rem;
-  display: flex;
-  justify-content: end;
-}
-#nav-items {
-  height: 100%;
-  gap: 1rem;
-}
+
 .nav-item {
   display: inline-block;
-  height: 100%;
   position: relative;
   font-size: 1rem;
   cursor: pointer;
@@ -40,13 +43,6 @@
   color: rgb(255, 255, 255);
 }
 
-#resume-button span {
-  position: relative;
-  top: 0.2rem;
-  font-size: 1.2rem;
-  left: 0.2rem;
-}
-
 #resume-button {
   background: linear-gradient(135deg, rgb(0, 163, 163), #008f53e1);
   color: rgb(255, 255, 255);
@@ -55,15 +51,27 @@
   font-size: 1rem;
   transition: 0.2s ease-in-out;
   font-weight: 300;
-  width: 7rem;
+  height: 100%;
+  
 }
+#resume-button span{
+  margin-left: 0.2rem;
+  position: relative;
+  top: 0.1rem;
+}
+
 #talk-button{
+    display: flex;
+    justify-content: center;
     padding: 0.6rem 1rem;
     background-color: rgba(128, 128, 128, 0.432);
     color: white;
     font-size: 1rem;
     border-radius: 0.5rem;
     font-weight: 300;
+    height: 100%;
+    width: 7rem;
+    
 }
 #open-sidenav-button {
   display: none;
