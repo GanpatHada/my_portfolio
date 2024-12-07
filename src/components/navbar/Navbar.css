@@ -10,8 +10,9 @@
   max-width: 1500px;
   display: flex;
   margin: auto;
-  padding: 0.8rem;
+  padding: 0.8rem 2rem;
   align-items: center;
+  justify-content: space-between;
 }
 #main-nav-content > section{
   
