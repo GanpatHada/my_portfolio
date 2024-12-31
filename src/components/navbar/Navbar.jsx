@@ -49,7 +49,7 @@ const Navbar = () => {
             </span>
           </a>
         </section>
-        <span id="open-sidenav-button" onClick={() => setSideNav(true)}>
+        <span id="open-sidenav-button"  onClick={() => setSideNav(true)}>
           <RxHamburgerMenu />
         </span>
         <section id="talk-section">

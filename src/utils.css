@@ -1,58 +1,62 @@
-.all-centered{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.all-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-img{
-    height: 100%;
-    max-height: 100%;
-    object-fit: contain;
+img {
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
-button{
-    border: none;
-    cursor: pointer;
+button {
+  border: none;
+  cursor: pointer;
 }
-button:disabled{
-    cursor: not-allowed;
-    background-color: gray!important;
+button:disabled {
+  cursor: not-allowed;
+  background-color: gray !important;
 }
-a{
-    text-decoration: none;
-    
+a {
+  text-decoration: none;
 }
-.app-pages header{
-    color: white;
-    font-size: 1rem;
-    padding: 1rem;
-    
-   
+.app-pages header {
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
 }
-.app-pages header h1{
-    font-weight: 500;
-}.app-pages header h1::first-letter{
-    color: aquamarine;
+.app-pages header h1 {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
 }
-.app-pages main{
-    flex: 1;
-    overflow: auto;
-    padding: 1rem;
-    
-}
-.app-pages main::-webkit-scrollbar{
-    width: 0.2rem;
-    background-color: rgba(218, 255, 255, 0);
-}
-.app-pages main::-webkit-scrollbar-thumb{
-    background-color: rgb(99, 99, 99);
-}
-.app-links{
-    color: aquamarine;
-    cursor: pointer;
-    
 
+.app-pages main {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
 }
-.app-links:hover{
-    text-decoration: underline;
-    color: rgb(0, 184, 184);
-    
+.app-pages main::-webkit-scrollbar {
+  width: 0.2rem;
+  background-color: rgba(218, 255, 255, 0);
+}
+.app-pages main::-webkit-scrollbar-thumb {
+  background-color: rgb(99, 99, 99);
+}
+.app-links {
+  color: aquamarine;
+  cursor: pointer;
+}
+.app-links:hover {
+  text-decoration: underline;
+  color: rgb(0, 184, 184);
+}
+
+@media screen and (max-width: 768px) {
+  .app-pages header h1 {
+    font-size: 1.5rem;
+  }
+  .app-pages header h1::first-letter {
+    color: aquamarine;
+  }
 }

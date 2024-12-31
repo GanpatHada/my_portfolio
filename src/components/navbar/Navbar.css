@@ -14,9 +14,7 @@
   align-items: center;
   justify-content: space-between;
 }
-#main-nav-content > section{
-  
-}
+
 #main-nav  #nav-items {
   flex: 1;
   gap: 1rem;
@@ -77,15 +75,28 @@
 #open-sidenav-button {
   display: none;
   font-size: 1.8rem;
-  position: relative;
-  top: 0.3rem;
-  color: white;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgb(204, 204, 204);
+  height: fit-content;
+  background-color: rgba(73, 73, 73, 0.493);
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  
+
 }
 @media screen and (max-width: 768px) {
   #nav-items {
     display: none;
   }
   #open-sidenav-button {
-    display: block;
+    display: flex;
+  }
+  #talk-button{
+    display: none;
   }
 }

@@ -1,8 +1,5 @@
 import React from "react";
 import "./Home.css";
-import Card from "../../components/card/Card";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { AiFillGithub } from "react-icons/ai";
 const Home = () => {
   return (
     <div id="home-page" className="all-centered">
@@ -19,16 +16,12 @@ const Home = () => {
         </section>
        <section id="home-action">
        <a target="_blank" href="https://www.linkedin.com/in/ganpathada/" id="linkedin-button" className="home-buttons">
-          Linked
-          <span>
-            <FaLinkedin />
-          </span>
+          Linkedin
+          
         </a>
         <a target="_blank" href="https://github.com/GanpatHada" id="github-button" className="all-centered home-buttons">
           Github 
-          <span>
-            <FaGithub />
-          </span>
+          
         </a>
        </section>
         
