@@ -7,13 +7,7 @@ const Project = () => {
   return (
     <div id="project-page" className="app-pages">
       <header>
-        <h1>My Projects</h1>
-        <div id="project-filter">
-            <section id="project-filter-text">All</section>
-            <section id="project-filter-image">
-              <FiFilter />
-            </section>
-        </div>
+        <h1>Projects</h1>
       </header>
       <main className="app-page-content">
         

@@ -1,5 +1,5 @@
 #home-content {
-  width: 90vw;
+  width: 80vw;
   max-width: 1200px;
   text-align: center;
   position: relative;
@@ -51,20 +51,22 @@
 #home-content > section {
   display: flex;
 }
-#intro{
+#intro {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 #short-intro {
   font-size: 3.2em;
   color: rgb(224, 224, 224);
   font-weight: 500;
+  font-family: "Poppins", Inter;
+  line-height: 1.2;
 }
 #short-intro span {
   color: aquamarine;
 }
-#long-intro{
+#long-intro {
   color: rgb(160, 160, 160);
   font-size: 1.25em;
   letter-spacing: 0.6px;
@@ -88,16 +90,14 @@
 }
 #github-button {
   color: rgb(255, 255, 255);
-  background:rgb(58, 58, 58);
+  background: rgb(58, 58, 58);
   border: 1px solid rgba(128, 128, 128, 0.514);
-  
 }
 #linkedin-button {
-  background:#006b62;
+  background: #006b62;
   color: rgb(255, 255, 255);
   margin-right: 1em;
   border: 1px solid rgba(50, 255, 187, 0.555);
-  
 }
 
 @media screen and (max-width: 540px) {
@@ -110,5 +110,4 @@
     font-size: 1.5em;
     padding: 12px 20px;
   }
-  
 }

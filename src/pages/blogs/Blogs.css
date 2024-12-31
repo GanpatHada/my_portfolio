@@ -2,3 +2,13 @@
 {
     color: var(--primary-text);
 }
+#blogs-page .no-blogs{
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
