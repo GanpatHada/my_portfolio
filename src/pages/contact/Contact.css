@@ -67,7 +67,7 @@
     
 }
 #contact-page #form-section .form-inputs:focus{
-    outline: 1px solid rgba(201, 201, 201, 0.507);
+    box-shadow:1px 1px 5px 1px rgba(127, 255, 212, 0.432),-1px -1px 5px 1px rgba(127, 255, 212, 0.438)
 }
 
 #contact-page #form-section #send-message-button{
@@ -83,6 +83,25 @@
 }
 #contact-page #form-section #send-message-button:active{
     background-color: rgb(177, 255, 229);
+}
+#contact-page #social-links{
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+#contact-page #social-links .social-link{
+    height: 3rem;
+    width: 3rem;
+    background-color: rgba(155, 155, 155, 0.13);
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    color: gray;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+#contact-page #social-links .social-link:hover{
+    color: rgb(214, 214, 214);
+    background-color: rgb(63, 63, 63);
 }
 @media screen and (max-width:768px) {
     #contact-form-wrapper{

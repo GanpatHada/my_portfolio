@@ -1,7 +1,5 @@
 import React from "react";
 import "./Blogs.css";
-import blogs from "../../Blogs.json";
-import NoBlogs from "../../assets/no-blog.svg";
 const Blogs = () => {
   return (
     <div id="blogs-page" className="app-pages">

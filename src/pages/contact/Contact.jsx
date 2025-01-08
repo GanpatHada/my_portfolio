@@ -3,6 +3,8 @@ import "./Contact.css";
 import { toast } from "react-toastify";
 import { sendMessage } from "../../services/ContactService";
 import { checkEmptyFields,checkValidEmail, initialMessage} from "../../utils/ContactUtils";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
+import { BiLogoGmail } from "react-icons/bi";
 
 const ContactForm = () => {
   const[message,setMessage]=useState({...initialMessage})
@@ -109,6 +111,13 @@ const Contact = () => {
               discussing ideas and doing a project together. Feel free to drop a
               message{" "}
             </h4>
+            <div id="social-links">
+                 <a target="blank" href="https://github.com/GanpatHada" className="social-link all-centered"><FaGithub /></a>
+                 <a target="blank" href="https://www.linkedin.com/in/ganpathada/" className="social-link all-centered"><FaLinkedin /></a>
+                 <a target="blank" href="https://www.instagram.com/ganpat_hada/" className="social-link all-centered"><FaInstagram /></a>
+                 <a target="blank" href="mailto:hadaganpat42@gmail.com" className="social-link all-centered"><BiLogoGmail /></a>
+                 <a target="blank" href="https://wa.me/9179373806" className="social-link all-centered"><FaWhatsapp /></a>
+            </div>
           </section>
           <ContactForm/>
         </div>

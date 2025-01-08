@@ -5,15 +5,13 @@
     flex-direction: column;
     overflow: hidden;    
     border: 1px solid rgba(128, 128, 128, 0.274);
+    height: auto;
 }
 .landscape-card .image-section{
     width: 100%;
     aspect-ratio: 2/1;
     overflow: hidden;
     position: relative;
-    height: 100%;
-    
-    
 }
 
 .landscape-card .image-section img{
@@ -30,6 +28,7 @@
     flex: 1;
     padding: 1rem;
     padding-top: 0.5rem;
+
     
 }
 .card h1{
@@ -46,26 +45,22 @@
 }
 .card-actions{
     display: flex;
-    margin: 1rem 0rem;
-    position: absolute;
-    background-color: var(--card-bg-color);
-    bottom: -1rem;
-    left: 0px;
-    border-top-right-radius: 1.3rem;
-    padding: 0.5rem;
+    padding: 0rem 0rem 1rem 1rem;
     display: flex;
     gap: 0.5rem;
+    
     
 }
 .card-actions a{
     font-size: 1.6rem;
-    background-color: rgb(66, 66, 66);
+    background-color: rgba(66, 66, 66, 0.5);
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
     padding: 0.4rem;
     color: rgb(146, 146, 146);
     transition: 0.2s;
+    border: 1px solid rgba(105, 105, 105, 0.5);
     
 }
 .card-actions a:hover{
@@ -80,10 +75,11 @@
     .card p{
         font-size: 0.8rem;
     }
-    .card-actions{
-        margin: 0.8rem 0rem;
-    }
+    
     .card .card-info-section{
         padding: 0.5rem;
+    }
+    .card-actions{
+        padding: 0rem 0rem 0.5rem 0.5rem;
     }
 }

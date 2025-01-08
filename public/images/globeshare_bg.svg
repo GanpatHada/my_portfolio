@@ -1,0 +1,27 @@
+<svg width="1080" height="720" viewBox="0 0 1080 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1080" height="720" fill="#1F6979"/>
+<g clip-path="url(#clip0_11_2)">
+<mask id="mask0_11_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="365" y="185" width="350" height="350">
+<path d="M715 185H365V535H715V185Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_11_2)">
+<path d="M540 535C636.65 535 715 456.65 715 360C715 263.35 636.65 185 540 185C443.35 185 365 263.35 365 360C365 456.65 443.35 535 540 535Z" fill="url(#paint0_radial_11_2)"/>
+<mask id="mask1_11_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="405" y="226" width="243" height="269">
+<path d="M647.806 226.35H405.612V494.388H647.806V226.35Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_11_2)">
+<path d="M486.201 473.641C486.201 475.247 487.007 476.719 488.289 477.47C489.569 478.22 491.126 478.124 492.322 477.217L519.277 456.848L486.202 439.401L486.201 473.641Z" fill="white"/>
+<path d="M646.548 243.918C645.807 243.162 644.852 242.767 643.886 242.767C643.304 242.767 642.723 242.91 642.173 243.209L409.48 369.531C407.101 370.825 405.596 373.513 405.612 376.453C405.629 379.39 407.159 382.06 409.554 383.324L470.882 415.664L593.504 304.123L486.076 423.676L562.475 463.963C563.413 464.46 564.437 464.708 565.451 464.708C566.316 464.708 567.173 464.533 567.989 464.179C569.768 463.4 571.182 461.84 571.888 459.87L647.528 248.69C648.127 247.029 647.737 245.128 646.548 243.918Z" fill="white"/>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_11_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(608.671 249.979) rotate(122.786) scale(298.628 239.524)">
+<stop stop-color="#85EDFF"/>
+<stop offset="1" stop-color="#023548"/>
+</radialGradient>
+<clipPath id="clip0_11_2">
+<rect width="350" height="350" fill="white" transform="translate(365 185)"/>
+</clipPath>
+</defs>
+</svg>

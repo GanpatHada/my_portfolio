@@ -37,8 +37,8 @@ const Navbar = () => {
           </NavLink>
 
           <a
-            href="resume.pdf"
-            download="Ganpat_resume.pdf"
+            href="GanpatHada_resume.pdf"
+            download="GanpatHada_resume.pdf"
             title="download resume"
             className="all-centered nav-item"
             id="resume-button"

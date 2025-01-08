@@ -15,10 +15,11 @@
 }
 body {
   height: 100vh;
-  background-color: rgb(129, 135, 139);
+  
 }
 #root {
   height: 100%;
+  
 }
 @media screen and (max-width: 768px) {
   :root {

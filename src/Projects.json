@@ -3,49 +3,19 @@
       "id": 1,
       "title": "Artstore",
       "description": "an e commerce web application for traditional art lovers",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsDy9sWxRwfQvFVZWLwqsuPevNUEBgiDCLlw&s"
+      "image": "/images/artstore_bg.jpg"
     },
     {
       "id": 2,
       "title": "Globeshare",
       "description": "a social media application connects the whole globe ",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIjB1kYFXjDM8Kcdy_sN746k5VI_tWK5BQJg&s"
+      "image": "/images/globeshare_bg.svg"
     },
     {
       "id": 3,
       "title": "SelfNotes",
       "description": "an application for managing notes",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROlpbROsuLWFnUQWjoTX-rtcoX3__48J66Zw&s"
-    },
-    {
-        "id": 4,
-        "title": "Info24",
-        "description": "a news application",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44NZiS1bt8kcJ8UdgM5_NmC4Ta1XmFj4vWQ&s"
-    },
-    {
-        "id": 5,
-        "title": "showTime",
-        "description": "a movie recomendation app",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxopGrA1B5VQ9zWB3b9-eIejRYqXieTly-iw&s"
-    },
-    {
-      "id": 1,
-      "title": "Artstore",
-      "description": "an e commerce web application for traditional art lovers",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsDy9sWxRwfQvFVZWLwqsuPevNUEBgiDCLlw&s"
-    },
-    {
-      "id": 2,
-      "title": "Globeshare",
-      "description": "a social media application connects the whole globe ",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIjB1kYFXjDM8Kcdy_sN746k5VI_tWK5BQJg&s"
-    },
-    {
-      "id": 3,
-      "title": "SelfNotes",
-      "description": "an application for managing notes",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROlpbROsuLWFnUQWjoTX-rtcoX3__48J66Zw&s"
+      "image": "/images/task_manager_bg.jpg"
     },
     {
         "id": 4,
@@ -59,4 +29,5 @@
         "description": "a movie recomendation app",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxopGrA1B5VQ9zWB3b9-eIejRYqXieTly-iw&s"
     }
+    
   ]
