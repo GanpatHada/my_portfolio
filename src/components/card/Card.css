@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;    
-    border: 1px solid rgba(128, 128, 128, 0.274);
+    /* border: 1px solid rgba(128, 128, 128, 0.274); */
+    /* box-shadow: rgba(255, 255, 255, 0.144) 1px 1px 1px 1px, rgba(255, 255, 255, 0.144) -1px -1px 1px 1px; */
     height: auto;
 }
 .landscape-card .image-section{
