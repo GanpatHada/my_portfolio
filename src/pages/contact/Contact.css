@@ -1,7 +1,12 @@
 #contact-form-wrapper{
     height: 100%;
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    height: fit-content;
+}
+#contact-form-wrapper > section:first-child{
+    grid-column: 1 / 3;
 }
 #contact-page section{
     display: flex;
@@ -11,23 +16,26 @@
     flex: 1.5;
     gap: 0.6rem;
     
+    
+    
+
+    
 }
-#contact-page #info-section h1{
-    font-size: 3rem;
-    color: whitesmoke;
-}
+
 #contact-page #contact-recommend{
     color: rgba(216, 255, 229, 0.705);
-    font-size: 0.9rem;
-    font-style: italic;
+    font-size: 0.8rem;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.171);
+    background-color: rgba(43, 48, 46, 0.541);
     border: 1px solid rgb(49, 49, 49);
     font-weight: 300;
     letter-spacing: 1px;
+    border-radius: 0.2rem;
+    height: fit-content;
+    
 }
 #contact-page #info-section h4{
-    font-size: 1rem;
+    font-size: 0.9rem;
     color:var(--primary-text);
     font-weight: 400;
 }
@@ -48,40 +56,41 @@
 }
 #contact-page #form-section textarea{
     display: block;
-    height: 10rem;
+    height: 6rem;
     width: 100%;
     resize: none;
     font-family: inherit;
    
 }
 #contact-page #form-section .form-inputs{
-    font-size: 0.9rem;
-    padding: 0.8rem;
-    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.6rem;
+    border-radius: 0.2rem;
     border: none;
-    outline: 1px solid rgba(128, 128, 128, 0.425);
     color: rgb(236, 236, 236);
-    background-color: rgba(0, 0, 0, 0.199);
+    background-color: rgba(41, 41, 41, 0.473);
     transition: 0.2s  linear;
     font-family: inherit;
     
     
 }
 #contact-page #form-section .form-inputs:focus{
-    box-shadow:1px 1px 5px 1px rgba(127, 255, 212, 0.432),-1px -1px 5px 1px rgba(127, 255, 212, 0.438)
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.199);
 }
 
 #contact-page #form-section #send-message-button{
-    font-size: 1rem;
-    padding: 1rem;
-    background-color: aquamarine;
-    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    background-color: rgb(88, 179, 148);
+    border-radius: 0.2rem;
     transition: 0.2s;
-    color: black;
+    color: white;
     font-family: inherit;
+    width: fit-content;
 }
 #contact-page #form-section #send-message-button:hover{
-    background-color: rgb(96, 184, 154);
+    background-color: rgb(100, 204, 169);
 }
 #contact-page #form-section #send-message-button:active{
     background-color: rgb(177, 255, 229);
@@ -94,23 +103,52 @@
 #contact-page #social-links .social-link{
     height: 3rem;
     width: 3rem;
-    background-color: rgba(155, 155, 155, 0.13);
     border-radius: 1.5rem;
     font-size: 1.5rem;
-    color: gray;
+    color: rgb(124, 124, 124);
     transition: 0.2s ease-in;
     cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+   
+   
+    
+}
+#contact-page #social-links .social-link::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 0rem;
+    width: 0rem;
+    background-color: rgba(255, 255, 255, 0.233);
+    transition: 0.2s ease-in-out;
+    border-radius: 1.5rem;
+    z-index: -1;
+    
+    
 }
 #contact-page #social-links .social-link:hover{
-    color: rgb(214, 214, 214);
-    background-color: rgb(63, 63, 63);
+    color: whitesmoke;
+}
+#contact-page #social-links .social-link:hover::before{
+    height: 3rem;
+    width: 3rem;
+
 }
 @media screen and (max-width:768px) {
     #contact-form-wrapper{
+        display: flex;
         flex-direction: column;
     }
     #contact-page #form-section{
         padding: 0rem 0rem 1rem 0rem;
+    }
+    #contact-page #social-links{
+        justify-content: center;
+        margin-bottom: 1rem;
     }
     
 }

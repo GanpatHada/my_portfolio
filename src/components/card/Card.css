@@ -32,13 +32,13 @@
 .card h1{
     color: rgb(201, 201, 201);
     padding: 0.5rem 0rem;
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-weight: 500;
+    font-size: 1rem;
     
 }
 .card p{
     color: rgb(131, 131, 131);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-family: "Poppins";
     
 }
@@ -69,10 +69,10 @@
 
 @media screen and (max-width:540px){
     .card h1{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .card p{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     
     .card .card-info-section{
