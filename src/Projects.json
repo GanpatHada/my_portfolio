@@ -1,33 +1,19 @@
 [
     {
-      "id": 1,
-      "title": "Artstore",
-      "description": "an e commerce web application for traditional art lovers",
-      "image": "/images/artstore_bg.jpg"
-    },
-    {
       "id": 2,
       "title": "Globeshare",
       "description": "a social media application connects the whole globe ",
-      "image": "/images/globeshare_bg.svg"
+      "image": "/images/globeshare_bg.svg",
+      "github":"https://github.com/GanpatHada/globeshare",
+      "live":"https://gobleshare.vercel.app/"
     },
-    {
-      "id": 3,
-      "title": "SelfNotes",
-      "description": "an application for managing notes",
-      "image": "/images/task_manager_bg.jpg"
-    },
-    {
-        "id": 4,
-        "title": "Info24",
-        "description": "a news application",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44NZiS1bt8kcJ8UdgM5_NmC4Ta1XmFj4vWQ&s"
-    },
-    {
-        "id": 5,
-        "title": "showTime",
-        "description": "a movie recomendation app",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxopGrA1B5VQ9zWB3b9-eIejRYqXieTly-iw&s"
-    }
     
+    {
+      "id": 1,
+      "title": "Artstore",
+      "description": "an e commerce web application for traditional art lovers",
+      "image": "/images/artstore_bg.jpg",
+      "github":"https://github.com/GanpatHada/artstore3.0_frontend",
+      "live":"https://artstoreonline.vercel.app"
+    }
   ]

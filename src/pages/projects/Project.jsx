@@ -18,8 +18,8 @@ const Project = () => {
                 title={project.title}
                 imageUrl={project.image}
                 description={project.description}
-                liveLink={"/"}
-                sourceCode={"/"}
+                liveLink={project.live}
+                sourceCode={project.github}
               />
             );
           })}

@@ -10,7 +10,7 @@ const Home = () => {
         </section>
         <section id="intro">
           <p id="short-intro">
-            I am <span>Ganpat Hada</span> , I design and develop visually
+            I am <span>Ganpat Hada ,</span>  I design and develop visually
             appealing and user-friendly webapps
           </p>
           <p id="long-intro">
