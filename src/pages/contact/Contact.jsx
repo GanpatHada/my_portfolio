@@ -7,8 +7,16 @@ import {
   checkValidEmail,
   initialMessage,
 } from "../../utils/ContactUtils";
-import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
-import { BiLogoGmail } from "react-icons/bi";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaLocationDot,
+  FaWhatsapp,
+} from "react-icons/fa6";
+import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
+import { MdLanguage } from "react-icons/md";
+import { SiGmail } from "react-icons/si";
 
 const ContactForm = () => {
   const [message, setMessage] = useState({ ...initialMessage });
@@ -38,11 +46,6 @@ const ContactForm = () => {
   };
   return (
     <section id="form-section">
-      {/* <h2>Send a message</h2>
-      <p>
-        Get in touch! Feel free to send me a message and I'll get back to you as
-        soon as possible
-      </p> */}
       <input
         className="form-inputs"
         onChange={(e) => handleFieldChange(e)}
@@ -107,47 +110,104 @@ const ContactDisclaimer = () => {
 const ContactInfo = () => {
   return (
     <section id="info-section">
-      <h4>
-        I'd love to hear about what you're working on and how I could help. I'm
-        currently looking for a new role and open to opportunities in the domain
-        of web development. I'm also open to discussing ideas and doing a
-        project together. Feel free to drop a message{" "}
-      </h4>
-      <div id="social-links">
+      <div id="main-links">
         <a
-          target="blank"
-          href="https://github.com/GanpatHada"
-          className="social-link all-centered"
+          id="location-box"
+          target="_blank"
+          href="https://www.google.com/maps/place/Bengaluru,+Karnataka"
+          className="main-link"
         >
-          <FaGithub />
+          <span className="all-centered">
+            <FaLocationDot />
+          </span>
+          <h4>Location</h4>
+          <p>Bengaluru,Karnataka</p>
         </a>
+        <div id="phone-box" className="main-link">
+          <span className="all-centered">
+            <FaPhoneAlt />
+          </span>
+          <h4>Phone</h4>
+          <p>+91 9179373806</p>
+        </div>
+        <div id="language-box" className="main-link">
+          <span className="all-centered">
+            <MdLanguage />
+          </span>
+          <h4>Languages</h4>
+          <p>Hindi, English</p>
+        </div>
         <a
-          target="blank"
-          href="https://www.linkedin.com/in/ganpathada/"
-          className="social-link all-centered"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          target="blank"
-          href="https://www.instagram.com/ganpat_hada/"
-          className="social-link all-centered"
-        >
-          <FaInstagram />
-        </a>
-        <a
-          target="blank"
+          id="gmail-box"
+          className="main-link"
+          target="_blank"
           href="mailto:hadaganpat42@gmail.com"
-          className="social-link all-centered"
         >
-          <BiLogoGmail />
+          <span className="all-centered">
+            <SiGmail />
+          </span>
+          <h4>Gmail</h4>
+          <p>hadaganpat42@gmail.com</p>
         </a>
         <a
-          target="blank"
-          href="https://wa.me/9179373806"
-          className="social-link all-centered"
+          id="github-box"
+          className="main-link"
+          target="_blank"
+          href="https://github.com/GanpatHada"
         >
-          <FaWhatsapp />
+          <span className="all-centered">
+            <FaGithub />
+          </span>
+          <h4>Github</h4>
+          <p>@GanpatHada</p>
+        </a>
+        <a
+          id="linkedin-box"
+          className="main-link"
+          target="_blank"
+          href="https://www.linkedin.com/in/ganpathada/"
+        >
+          <span className="all-centered">
+            <FaLinkedin />
+          </span>
+          <h4>Linkedin</h4>
+          <p>@ganpathada</p>
+        </a>
+        <a
+          id="gmail-box"
+          className="main-link"
+          target="_blank"
+          href="https://www.instagram.com/ganpat_hada/"
+        >
+          <span className="all-centered">
+            <FaInstagram />
+          </span>
+          <h4>Instagram</h4>
+          <p>@ganpat_hada</p>
+        </a>
+        <a
+          id="gmail-box"
+          className="main-link"
+          target="_blank"
+          href="https://t.me/GanpatHada"
+        >
+          <span className="all-centered">
+            <FaTelegramPlane />
+          </span>
+          <h4>Telegram</h4>
+          <p>@GanpatHada</p>
+        </a>
+        <a
+          id="gmail-box"
+          className="main-link"
+          target="_blank"
+          href="https://wa.me/9179373806"
+        >
+          <span className="all-centered">
+            <FaWhatsapp />
+          </span>
+          <h4>Whatsapp</h4>
+          <p>+91 9179373806</p>
         </a>
       </div>
     </section>
@@ -156,17 +216,17 @@ const ContactInfo = () => {
 
 const Contact = () => {
   return (
-    <div id="contact-page" className="app-pages">
+    <div id="contact" className="home-sections">
       <header>
-        <h1>Contact me</h1>
+        <h1>
+          <span>{"<"}</span>Contact<span>{" />"}</span>
+        </h1>
       </header>
-      <main>
-        <div id="contact-form-wrapper">
-          <ContactDisclaimer />
-          <ContactInfo />
-          <ContactForm />
-        </div>
-      </main>
+      <div id="contact-content">
+        <ContactDisclaimer />
+        <ContactInfo />
+        <ContactForm />
+      </div>
     </div>
   );
 };

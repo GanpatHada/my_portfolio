@@ -8,6 +8,7 @@
   
 }
 :root {
+  --primary-color:#3ecf8e;
   --card-bg-color: rgb(26, 26, 26);
   --card-border-color: rgba(128, 128, 128, 0.349);
   --primary-text: rgb(192, 192, 192);
@@ -15,9 +16,21 @@
 }
 body {
   height: 100vh;
-  font-family: "Poppins", Inter;
+  font-family: "Inter","Arial","Sans-serrif";
   
 }
+.primary-button{
+  padding: 0.5rem 1rem;
+  background-color: #3ecf8e86;
+  box-shadow: 0 0 0px 1px #c7ffe694;
+  color: whitesmoke;
+  border-radius:0.3rem;
+  &:hover{
+    filter: brightness(1.2);
+    color: white;
+  }
+}
+
 #root {
   height: 100%;
   

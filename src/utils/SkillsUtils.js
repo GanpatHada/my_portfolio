@@ -16,6 +16,8 @@ import figmaImage from "../assets/figma.png";
 import springImage from "../assets/spring.png";
 import reduxImage from "../assets/redux.svg";
 import gitImage from "../assets/git.png";
+import nextImage from '../assets/next-js-logo.webp'
+import postgresImage from '../assets/Postgresql.png'
 
 
 export const skillsList=[{
@@ -90,4 +92,12 @@ export const skillsList=[{
     name:"Git",
     description:"version controller",
     image:gitImage
+},{
+    name:"Nextjs",
+    description:"React Framework",
+    image:nextImage
+},{
+    name:"Postgresql",
+    description:"Relational Database",
+    image:postgresImage
 }]

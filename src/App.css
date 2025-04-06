@@ -4,19 +4,48 @@ main{
   height: 100%;
 }
 #content{
-  background-color: rgb(12, 12, 12);
+  background-color: black;
   flex: 1;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; 
   overflow: auto;
+  scroll-behavior: smooth;
 }
-
+#content::-webkit-scrollbar{
+  display: none;
+}
+.main-saperator{
+  height: 1px;
+  background:linear-gradient(to right,rgba(128, 128, 128, 0),rgba(255, 255, 255, 0.473),rgba(128, 128, 128, 0));
+  border: none;
+  margin: 4rem 0rem;
+}
 #content >*{
   margin: auto;
   max-width: 1500px;
   overflow: auto;
-  height: 100%;
   display: flex;
   flex-direction: column;  
+}
+#scroll-progress-track{
+  height: 1px;
+  background-color: rgb(56, 56, 56);
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+#scroll-progress{
+  display: inline-block;
+  position: absolute;
+  border: none;
+  height: 1px;
+  background:linear-gradient(to right,#00ac5e,rgb(183, 255, 221));
+  z-index: 2;
+
+}
+@media screen and (max-width: 540px){
+  .main-saperator{
+    margin: 2rem 0rem;
+  }
 }
