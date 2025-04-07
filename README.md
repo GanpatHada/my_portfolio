@@ -1,4 +1,4 @@
-# Ganpat Hada's Portfolio website
+# Portfolio website
 
 Welcome, 👏Here is my [Portfolio](https://ganpathada22.netlify.app)
 
@@ -8,8 +8,9 @@ Welcome, 👏Here is my [Portfolio](https://ganpathada22.netlify.app)
 
 ## 🖼 Portfolio preview (Mobile)
 
-<img src="./src/assets/mobile_screen.png" alt="Portfolio preview" width="300" />
----
+<div align="center">
+  <img src="./src/assets/mobile_screen.png" alt="Portfolio preview" width="300" />
+</div>
 
 ## 🚀 Features
 
