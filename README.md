@@ -4,11 +4,11 @@ Welcome, 👏Here is my [Portfolio](https://ganpathada22.netlify.app)
 
 ## 🖼 Portfolio preview (Desktop/Laptop)
 
-![Portfolio preview](./src/assets/app_screenshot_desktop.png)
+<img src="./src/assets/desktop_screen.png" alt="Portfolio preview" />
 
 ## 🖼 Portfolio preview (Mobile)
 
-![Portfolio preview](./src/assets/mobile_screen.png)
+<img src="./src/assets/mobile_screen.png" alt="Portfolio preview" width="300" />
 ---
 
 ## 🚀 Features
