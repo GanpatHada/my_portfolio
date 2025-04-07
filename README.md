@@ -6,6 +6,9 @@ Welcome, 👏Here is my [Portfolio](https://ganpathada22.netlify.app)
 
 ![Portfolio preview](./src/assets/app_screenshot_desktop.png)
 
+## 🖼 Portfolio preview (Mobile)
+
+![Portfolio preview](./src/assets/mobile_screen.png)
 ---
 
 ## 🚀 Features

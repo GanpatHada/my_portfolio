@@ -8,8 +8,8 @@
   width: 100%;
   max-width: 1500px;
   display: flex;
-  margin: auto;
-  padding: 0.8rem 1rem;
+  margin: 0.5rem auto;
+  padding: 0rem 1rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -74,14 +74,20 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;  
+    padding: 0rem;
+    margin: 0rem;
   }
-  
-  #nav-items{
+  #main-nav-content >*:not(#nav-items){
+    margin: 1rem;
+  }
+  #main-nav-content >#nav-items{
+    padding: 1rem;
     order: 3;
     grid-column: span 2;
-    margin: 1rem 0rem 0rem 0rem; 
+    background-color: rgba(54, 54, 54, 0.5);
+    gap: 0.5rem;
   }
-
+ 
   #resume-button{
     justify-self: end;
   }

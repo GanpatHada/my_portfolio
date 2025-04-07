@@ -19,8 +19,8 @@ const SkillDetails = ({ skill }) => {
 const SkillBox = ({ skill: { name, description, image }, setSkill ,expended }) => {
   return (
     <div
-      onMouseEnter={() => setSkill({ name, description })}
-      onMouseLeave={() => setSkill(null)}
+      onMouseEnter={() => !expended && setSkill({ name, description })}
+      onMouseLeave={() => !expended && setSkill(null)}
       className="skill-box"
     >
       <section className="image-section">
@@ -37,8 +37,8 @@ const SkillBox = ({ skill: { name, description, image }, setSkill ,expended }) =
 const SkillGroup = ({ setSkill }) => {
   return (
     <div className="group">
-      {skillsList.map((skill) => (
-        <SkillBox key={skill.id} skill={skill} setSkill={setSkill} />
+      {skillsList.map((skill,index) => (
+        <SkillBox key={index} skill={skill} setSkill={setSkill} />
       ))}
     </div>
   );
@@ -65,8 +65,8 @@ const ContractedSkills = ({ skill, setSkill }) => {
 const ExpandedSkills = () => {
   return (
     <div id="expanded-skills">
-      {skillsList.map((skill) => {
-        return <SkillBox key={skill.id} skill={skill} expended/>;
+      {skillsList.map((skill,index) => {
+        return <SkillBox key={index} skill={skill} expended/>;
       })}
     </div>
   );

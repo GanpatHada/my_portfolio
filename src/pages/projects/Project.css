@@ -49,8 +49,10 @@
 }
 .card-actions {
   display: flex;
-  margin: 1rem 0rem;
+  padding-top: 1rem;
   gap: 0.5rem;
+  
+
   
 }
 .card-actions a {
@@ -109,16 +111,10 @@
 #project-filter:hover {
   border-color: rgba(128, 128, 128, 0.699);
 }
-@media screen and (max-width: 1080px) and (min-width: 541px) {
-  #project-page .project-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.8rem;
-  }
-}
 
 @media screen and (max-width: 540px) {
-  #project-page .project-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+  #projects-content {
+    grid-template-columns: repeat(1, 1fr);
     gap: 0.5rem;
   }
 }
