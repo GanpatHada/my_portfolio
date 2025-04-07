@@ -45,7 +45,6 @@
 .project-card p {
   color: rgb(204, 204, 204);
   font-size: 0.9rem;
-  font-family: "Poppins";
 }
 .card-actions {
   display: flex;
@@ -80,7 +79,7 @@
     color: whitesmoke;
     font-size: 0.8rem;
     border: 1px solid var(--card-border-color);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     padding: 0.4rem 1rem;
     display: flex;
     align-items: center;

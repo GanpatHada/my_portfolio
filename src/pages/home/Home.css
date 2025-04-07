@@ -83,8 +83,7 @@
   font-size: 3rem;
   color: rgb(224, 224, 224);
   font-weight: 500;
-  font-family: "Poppins", Inter;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 #short-intro span {
   color: #3ecf8e;
@@ -93,7 +92,6 @@
   color: #a0a0a0;
   font-size: 1rem;
   letter-spacing: 0.6px;
-  font-family: "Poppins", Inter;
 }
 #home-action {
   display: flex;
