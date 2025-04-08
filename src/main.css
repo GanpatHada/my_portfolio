@@ -36,8 +36,9 @@ body {
   
 }
 @media screen and (max-width: 768px) {
-  :root {
+  html {
     font-size: 14px;
   }
   
 }
+

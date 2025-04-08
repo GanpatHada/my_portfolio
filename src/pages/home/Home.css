@@ -84,6 +84,7 @@
   color: rgb(224, 224, 224);
   font-weight: 500;
   line-height: 1.1;
+  
 }
 #short-intro span {
   color: #3ecf8e;
@@ -92,6 +93,7 @@
   color: #a0a0a0;
   font-size: 1rem;
   letter-spacing: 0.6px;
+  text-wrap: pretty;
 }
 #home-action {
   display: flex;
@@ -136,6 +138,7 @@
     font-size: 12px;
     padding: 50px 1rem;
   }
+  
   #short-intro span{
     display: inline-block;
     width: 100%;;

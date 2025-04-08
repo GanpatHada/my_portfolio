@@ -1,11 +1,9 @@
-import React, { useContext } from "react";
+import React  from "react";
 import "./Navbar.css";
 import mainLogo from "../../assets/mainLogo.svg";
 import { FiDownload } from "react-icons/fi";
-import { SideNavContext } from "../../context/SideNavContext";
 
 const Navbar = () => {
-  const { setSideNav } = useContext(SideNavContext);
   return (
     <nav id="main-nav" >
       <div id="main-nav-content">

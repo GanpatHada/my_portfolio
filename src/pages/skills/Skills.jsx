@@ -75,7 +75,7 @@ const ExpandedSkills = () => {
 const SkillHeader = ({expended,setExpended}) => {
   return (
     <header>
-      <h1>Techonlogies ,I work with</h1>
+      <h1>Technologies ,I work with</h1>
       <button title={expended?'minimize':'maximize'} onClick={()=>setExpended(!expended)}>
       {expended?<IoContract />:<IoExpand />}
       </button>
