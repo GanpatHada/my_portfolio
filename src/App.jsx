@@ -4,6 +4,8 @@ import Alert from "./components/alert/Alert";
 import {useRef, useState } from "react";
 import "aos/dist/aos.css";
 import Home from "./pages/home/Home";
+import { Route, Routes } from "react-router-dom";
+import SpotifyComponent from "./pages/spotify/SpotifyComponent";
 
 
 const App = () => {
@@ -31,7 +33,10 @@ const App = () => {
         <span id="scroll-progress" style={{ width: `${progress}%` }} />
       </div>
       <div id="content" ref={scrollRef} onScroll={handleScroll}>
-        <Home />
+        <Routes>
+                 <Route path="/spotify" element={<SpotifyComponent />} />
+                 <Route path="/" element={<Home />} />
+        </Routes>
       </div>
     </main>
   );
