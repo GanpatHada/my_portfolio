@@ -9,7 +9,7 @@
   margin: 0.5rem auto;
   padding: 0rem 1rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;;
 }
 
 #main-nav  #nav-items {
@@ -80,11 +80,14 @@
     margin: 0.5rem;
   }
   #main-nav-content >#nav-items{
-    padding: 0.75rem;
+    padding: 0.75rem 0.37rem;
     order: 3;
     grid-column: span 2;
     background-color: rgba(54, 54, 54, 0.5);
     gap: 0.5rem;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
   }
  
   #resume-button{

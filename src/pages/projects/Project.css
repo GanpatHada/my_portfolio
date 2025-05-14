@@ -43,12 +43,11 @@
   font-size: 1.2rem;
 }
 .project-card p {
-  color: rgb(204, 204, 204);
+  color: #a0a0a0;
   font-size: 0.9rem;
 }
 .card-actions {
   display: flex;
-  padding-top: 1rem;
   gap: 0.5rem;
   
 
@@ -74,6 +73,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    padding: 0.5rem 0rem;
 }
 .project-card .tag{
     color: whitesmoke;

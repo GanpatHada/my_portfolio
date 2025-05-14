@@ -6,13 +6,10 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 
 
 const ProjectCard = ({
-  project: { title, description, image, sourceCode, liveLink, tags },
+  project: { title, description, image, github, live, tags },
 }) => {
   return (
     <div className="project-card">
-      {/* <div className="image-section">
-        <img src={image} alt="..." />
-      </div> */}
       <div className="info-section">
         <h1>{title}</h1>
         <p>{description}</p>
@@ -25,7 +22,7 @@ const ProjectCard = ({
             className="all-centered"
             title="source code"
             target="_blank"
-            href={sourceCode}
+            href={github}
           >
             <FiGithub />
           </a>
@@ -33,7 +30,7 @@ const ProjectCard = ({
             className="all-centered"
             title="live link"
             target="_blank"
-            href={liveLink}
+            href={live}
           >
             <HiOutlineExternalLink />
           </a>

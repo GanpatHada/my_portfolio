@@ -22,7 +22,7 @@ const Navbar = () => {
           <a href={"#projects"} className="nav-item all-centered">
             Projects
           </a>
-          <a href={"/blogs"} className="nav-item all-centered">
+          <a href={"https://ganpathada.hashnode.dev/"} target="_blank" className="nav-item all-centered">
             Blogs
           </a>
           <a href={"#contact"} className="nav-item all-centered">

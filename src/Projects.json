@@ -2,11 +2,11 @@
     {
       "id": 2,
       "title": "Globeshare",
-      "description": "A social media application that connects the people accross globe",
+      "description": "A social media web application that connects the people accross globe",
       "image": "/images/globeshare_bg.svg",
       "github":"https://github.com/GanpatHada/globeshare",
       "live":"https://globeshare.vercel.app/",
-      "tags":["Reactjs","Firebase"]
+      "tags":["Reactjs","Firebase Firestore","Firebase storage","Firebase auth"]
     },
     
     {
@@ -16,8 +16,19 @@
       "image": "/images/artstore_bg.jpg",
       "github":"https://github.com/GanpatHada/artstore3.0_frontend",
       "live":"https://artstoreonline.vercel.app",
-      "tags":["Reactjs","Nodejs","Mongodb","Expressjs"]
+      "tags":["Reactjs","Nodejs","Mongodb","Expressjs","Cloudinary","Razorpay"]
+    },
+
+    {
+      "id": 3,
+      "title": "Committask",
+      "description": "A sleek and intuitive task management web app built for modern productivity. Organize tasks, set priorities, track deadlines, and stay in control",
+      "image": "/images/artstore_bg.jpg",
+      "github":"https://github.com/GanpatHada/Committask",
+      "live":"https://committask.vercel.app",
+      "tags":["Nextjs","NextAuth","PostgreSQL","Redux","Tailwindcss","Typescript"]
     }
+
     
   ]
     
