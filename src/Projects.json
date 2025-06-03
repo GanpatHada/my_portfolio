@@ -2,7 +2,7 @@
     {
       "id": 2,
       "title": "Globeshare",
-      "description": "A social media web application that connects the people accross globe",
+      "description": "A social media web app designed to connect people across the globe, share updates, and build meaningful connections",
       "image": "/images/globeshare_bg.svg",
       "github":"https://github.com/GanpatHada/globeshare",
       "live":"https://globeshare.vercel.app/",
@@ -12,7 +12,7 @@
     {
       "id": 1,
       "title": "Artstore",
-      "description": "An e-commerce web application for traditional art lovers where a person can purchase or sold artworks",
+      "description": "An e-commerce web app tailored for traditional art enthusiasts, allowing users to seamlessly buy and sell unique artworks.",
       "image": "/images/artstore_bg.jpg",
       "github":"https://github.com/GanpatHada/artstore3.0_frontend",
       "live":"https://artstoreonline.vercel.app",
@@ -22,7 +22,7 @@
     {
       "id": 3,
       "title": "Committask",
-      "description": "A sleek and intuitive task management web app built for modern productivity. Organize tasks, set priorities, track deadlines, and stay in control",
+      "description": "A sleek and intuitive task management web app built for modern productivity. Organize tasks, set priorities, track deadlines",
       "image": "/images/artstore_bg.jpg",
       "github":"https://github.com/GanpatHada/Committask",
       "live":"https://committask.vercel.app",

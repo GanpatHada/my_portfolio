@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import "./Project.css";
 import projects from "../../../src/Projects.json";
 import { FiGithub } from "react-icons/fi";
@@ -6,22 +7,35 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 
 
 const ProjectCard = ({
-  project: { title, description, image, github, live, tags },
+  project: { title, description, image, github, live, tags },index
 }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="project-card">
+    <motion.div
+      ref={ref}
+      className="project-card"
+      initial={{ opacity: 0}}
+      animate={isInView ? { opacity: 1} : {}}
+      transition={{ duration: 0.6, delay: index * 0.2 }}
+    >
       <div className="info-section">
         <h1>{title}</h1>
         <p>{description}</p>
         <section id="tags-section">
-        {tags.map((tag,index)=><div key={index} className="tag">{tag}</div>
-        )}
+          {tags.map((tag, index) => (
+            <div key={index} className="tag">
+              {tag}
+            </div>
+          ))}
         </section>
         <section className="card-actions">
           <a
             className="all-centered"
             title="source code"
             target="_blank"
+            rel="noopener noreferrer"
             href={github}
           >
             <FiGithub />
@@ -30,14 +44,14 @@ const ProjectCard = ({
             className="all-centered"
             title="live link"
             target="_blank"
+            rel="noopener noreferrer"
             href={live}
           >
             <HiOutlineExternalLink />
           </a>
         </section>
-        
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -51,8 +65,8 @@ const Project = () => {
         </h1>
       </header>
       <main id="projects-content">
-        {projects.map((project) => {
-          return <ProjectCard key={project.id} project={project} />;
+        {projects.map((project,index) => {
+          return <ProjectCard key={project.id} index={index} project={project} />;
         })}
       </main>
     </div>
