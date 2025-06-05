@@ -120,9 +120,16 @@
   flex-shrink: 0;
   transition: 0.5s ease-out;
   gap: 1rem;
+  
+}
+#skills-content #contracted-skills .skill-box{
+  box-shadow: none;
+  background-color: transparent;
+  filter: brightness(0.5) grayscale(5);
+
   &:hover {
-    box-shadow: 0 0 1px 1px rgb(175, 175, 175);
-    background-color: rgba(128, 128, 128, 0.233);
+    box-shadow: 0 0 1px 1px rgba(245, 245, 245, 0.75);
+    filter:brightness(1)grayscale(5);
     transition: none;
   }
 }
@@ -137,7 +144,7 @@
   height: 100%;
   width: 100%;
   object-fit: contain;
-  filter: grayscale(1);
+  
 }
 .skill-box .info-section {
   display: flex;

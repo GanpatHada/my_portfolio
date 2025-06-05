@@ -15,12 +15,12 @@ const ProjectCard = ({
   return (
     <motion.div
       ref={ref}
-      className="project-card"
+      className="project-card-wrapper"
       initial={{ opacity: 0}}
       animate={isInView ? { opacity: 1} : {}}
       transition={{ duration: 0.6, delay: index * 0.2 }}
     >
-      <div className="info-section">
+      <div className="project-card">
         <h1>{title}</h1>
         <p>{description}</p>
         <section id="tags-section">
