@@ -5,7 +5,7 @@ import {useRef, useState } from "react";
 import "aos/dist/aos.css";
 import Home from "./pages/home/Home";
 import { Route, Routes } from "react-router-dom";
-import SpotifyComponent from "./pages/spotify/SpotifyComponent";
+import Spotify from "./pages/spotify/Spotify";
 
 
 const App = () => {
@@ -34,7 +34,7 @@ const App = () => {
       </div>
       <div id="content" ref={scrollRef} onScroll={handleScroll}>
         <Routes>
-                 <Route path="/spotify" element={<SpotifyComponent />} />
+                 <Route path="/spotify" element={<Spotify />} />
                  <Route path="/" element={<Home />} />
         </Routes>
       </div>
