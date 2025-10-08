@@ -1,6 +1,6 @@
 import cImage from "../assets/c.png";
 import cppImage from "../assets/c++.svg";
-import javaImage from "../assets/java.svg";
+import javaImage from "../assets/Java.svg";
 import jsImage from "../assets/js.png";
 import htmlImage from "../assets/html.png";
 import cssImage from "../assets/css.png";
