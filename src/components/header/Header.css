@@ -6,17 +6,18 @@
     padding: 10px 15px;
 }
 #main-logo {
-  height: 3rem;
-  display: flex;
   background-color: transparent;
-  align-items: center;
-  gap: 0.5rem;
+ 
   
 }
 #main-logo a{
-    height: 3rem;
-    width: 3rem;
-    
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#main-logo img{
+  height: 3rem;
+  width: 3rem;
 }
 #main-logo h4{
     color: transparent;

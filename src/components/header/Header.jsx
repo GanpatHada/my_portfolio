@@ -8,8 +8,9 @@ const Header = () => {
         <button id="main-logo">
           <a href="/#home">
             <img src={mainLogo} alt="" />
+            <h4>Ganpat Hada</h4>
           </a>
-          <h4>Ganpat Hada</h4>
+          
         </button>
         <button className="all-centered primary-button" id="resume-button">
           <a

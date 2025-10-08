@@ -77,7 +77,6 @@
     padding: 0.75rem 0.37rem;
     order: 3;
     grid-column: span 2;
-    background-color: rgba(54, 54, 54, 0.5);
     gap: 0.5rem;
     overflow: auto;
     display: flex;

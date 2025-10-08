@@ -45,10 +45,5 @@ body::-webkit-scrollbar{
   height: 100%;
   
 }
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-  
-}
+
 
