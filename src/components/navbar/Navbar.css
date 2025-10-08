@@ -1,13 +1,17 @@
 #main-nav {
-  background-color: rgb(0, 0, 0);
   color: white; 
+  position: sticky;
+  top: 1px;
+  border-bottom: 1px solid #353535;
+  background-color: black;
+  z-index: 5;
 }
 #main-nav-content{
   width: 100%;
   max-width: 1500px;
   display: flex;
   margin: 0.5rem auto;
-  padding: 0rem 1rem;
+  padding: 0.25rem 1rem;
   align-items: center;
   justify-content: space-between;;
 }
@@ -19,35 +23,25 @@
 #main-nav .active{
   color: aquamarine!important;
 }
-#main-logo {
-  height: 3rem;
-}
+
 
 .nav-item {
   display: inline-block;
   position: relative;
-  font-size: 0.9rem;
+  font-size: 1rem;
   cursor: pointer;
   color: rgb(192, 192, 192);
   font-weight: 400;
-  padding: 0rem 0.5rem;
+  padding: 0.5rem;
   transition: 0.2s ease-in-out;
+  
 }
 
 .nav-item:hover {
   color: rgb(255, 255, 255);
 }
 
-#resume-button {
-  font-size: 0.8rem;
-  width: fit-content;
-  
-}
-#resume-button span{
-  margin-left: 0.2rem;
-  position: relative;
-  top: 0.1rem;
-}
+
 
 #open-sidenav-button {
   display: none;

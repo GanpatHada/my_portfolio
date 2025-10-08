@@ -1,0 +1,41 @@
+#main-header{
+   border-bottom: 1px solid #353535;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+#main-logo {
+  height: 3rem;
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+#main-logo a{
+    height: 3rem;
+    width: 3rem;
+    
+}
+#main-logo h4{
+    color: transparent;
+    text-align: start;
+    font-size: 1.25rem;
+    background: linear-gradient(to right,mediumaquamarine,rgb(255, 255, 255));
+   -webkit-background-clip: text;
+}
+#resume-button {
+  font-size: 0.8rem;
+  width: fit-content;
+  height: fit-content;
+  
+}
+#resume-button a{
+    color: white;
+}
+#resume-button span{
+  margin-left: 0.2rem;
+  position: relative;
+  top: 0.1rem;
+}

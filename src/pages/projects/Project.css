@@ -8,15 +8,16 @@
   margin: auto;
 }
 
-.project-card-wrapper{
-  background:linear-gradient(145deg,rgba(223, 223, 223, 0.5),var(--card-border-color) 50%);
+.project-card-wrapper {
+  background-color: rgb(68, 68, 68);
   padding: 1px;
   border-radius: 0.5rem;
   overflow: hidden;
-  &:hover{
-    background:linear-gradient(145deg,rgba(223, 223, 223, 0.7),var(--card-border-color) 50%);
-  }
-  transition: 0.2s ease-in-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.project-card-wrapper:hover {
+  background-color: rgb(92, 92, 92);
 }
 
 .project-card { 

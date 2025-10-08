@@ -31,9 +31,11 @@ main{
 #scroll-progress-track{
   height: 1px;
   background-color: rgb(56, 56, 56);
-  position: relative;
+  position: fixed;
+  top: 0px;
   display: flex;
-  z-index: 2;
+  z-index: 5;
+  width: 100vw;
 }
 #scroll-progress{
   display: inline-block;

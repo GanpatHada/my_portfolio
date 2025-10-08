@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import About from '../../pages/about/About'
 import Skills from '../../pages/skills/Skills'
 import Projects from '../../pages/projects/Project'
 import Contact from '../../pages/contact/Contact'
 import "./Home.css";
+import { toast } from "react-toastify";
+import { FaRegCircleCheck, FaRegCopy } from "react-icons/fa6";
 
 
 const LinkedInButton = () => {
@@ -31,6 +33,26 @@ const GithubButton = () => {
     </a>
   );
 };
+
+const NpxButton=()=>{
+  const[isCopied,setIsCopied]=useState(false);
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText("npx ganpat_hada");
+      setIsCopied(true);
+      setTimeout(() => {
+        setIsCopied(false);
+      }, 5000);
+    } catch (err) {
+      toast.error("Failed to copy!");
+    }
+  };
+  return(
+    <button id="npx-button" className="home-buttons" onClick={handleCopy}>
+        npx ganpat_hada <span>{isCopied?<FaRegCircleCheck />:<FaRegCopy />}</span>
+    </button>
+  )
+}
 
 const OpenToWork = () => {
   return (
@@ -65,6 +87,7 @@ const Home = () => {
         <section id="home-action">
           <LinkedInButton />
           <GithubButton />
+          <NpxButton/>
         </section>
       </div>
       <hr className="main-saperator" />

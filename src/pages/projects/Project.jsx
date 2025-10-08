@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import "./Project.css";
 import projects from "../../../src/Projects.json";
 import { FiGithub } from "react-icons/fi";
-import { HiOutlineExternalLink } from "react-icons/hi";
+import { HiOutlineExternalLink } from "react-icons/hi"
 
 
 const ProjectCard = ({
