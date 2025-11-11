@@ -13,6 +13,9 @@
   --primary-text: rgb(192, 192, 192);
   --secondary-text: rgb(124, 124, 124);
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   min-height: 100vh;
   background-color: black;
@@ -25,6 +28,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  
 }
 body::-webkit-scrollbar{
   display: none;
